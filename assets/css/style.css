@@ -4,10 +4,16 @@ body {
     background-color: #c7c7c7;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
 
 p {
     font-family: 'Noto', sans-serif;
+}
+
+.hero-image {
+    background: url(../images/camera2.jpg) no-repeat center 50%;
+    background-size: cover;
+    color: white;
 }
