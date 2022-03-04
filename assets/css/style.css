@@ -14,6 +14,9 @@
 body {
     background-color: var(--p-color);
     color: var(--s-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,6 +40,12 @@ p {
     background-color: var(--t2-color);
     border-color: var(--t2-color);
     color: var(--p-color);
+}
+
+/* Utility */
+
+.content {
+    flex: 1;
 }
 
 /* Hero Image */
@@ -64,11 +73,13 @@ footer .row {
 
 .footer-list ul {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-list .list-item {
     list-style: none;
-    text-align: left;
 }
 
 .social-links {
@@ -85,4 +96,12 @@ footer .row {
 
 .fab:hover {
     color: var(--t2-color);
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .footer-list ul {
+        align-items: flex-start;
+    }
 }
